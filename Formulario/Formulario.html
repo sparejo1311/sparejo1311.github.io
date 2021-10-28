@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1 style="text-align: center;">FORMULARIO AMAZON</h1>
+    <form method="get">
+        <fieldset style="border: solid black 2px;">
+            <legend>Datos de envio</legend>
+            <label for="Nombre" >Nombre: </label>
+            <input type="text" name="Nombre" style="margin-bottom: 10px;"><br>
+
+            <label for="Apellidos">Apellidos: </label>
+            <input type="text" name="Apellidos" style="margin-bottom: 10px;width: 230px;"><br>
+
+            <label for="FechaNaciomiento">Fecha de nacimiento: </label>
+            <input type="date" name="FechaNaciomiento" required style="margin-bottom: 10px;"><br>
+
+            <label for="Email">Email: </label>
+            <input type="Email" name="Email" placeholder="ejemplo@gmail.com" style="margin-bottom: 10px;"><br>
+
+            <label for="Direccion">Dirección: </label>
+            <input type="text" name="Direccion" required style="margin-bottom: 10px;;"><br>
+
+            <label for="Localidad">Localidad: </label>
+            <input type="text" name="Localidad" required style="margin-bottom: 10px;"><br>
+
+            <label for="Codigo Postal">Codigo Postal: </label>
+            <input type="number" name="Codigo Postal" placeholder="12345" max="99999" style="margin-bottom: 10px;width: 100px;"><br>
+
+            <label for="Telefono">Telefono: </label>
+            <input type="tel" name="Telefono" placeholder="123456789" max="999999999" required style="margin-bottom: 10px;width: 150px;"><br>
+        </fieldset>
+        <fieldset style="border: solid black 2px;">
+            <legend>Opciones de envío, producto y pago</legend>
+            <h3>Envio:</h3>
+            <input type="radio" name="Envio" style="margin-bottom: 10px;">
+            <label for="Envio" >Gratis en 1 día</label><br>
+
+            <input type="radio" name="Envio" style="margin-bottom: 10px;">
+            <label for="Envio">Envío económico</label><br>
+
+            <input type="radio" name="Envio" style="margin-bottom: 10px;">
+            <label for="Envio">Envío estandas</label><br>   
+
+            <input type="radio" name="Envio" style="margin-bottom: 10px;">
+            <label for="Envi">Envío en 1 día</label><br>
+
+            <input type="radio" name="Envio" style="margin-bottom: 10px;">
+            <label for="Envio">Entrega hoy</label><br>
+            
+            <h3>Producto:</h3>
+            <label for="Color">Color:</label>
+            <input type="color" name="color" style="margin-bottom: 10px;;"><br>
+
+            <label for="Cantidad">Cantidad:</label>
+            <input type="number" name="numero" style="margin-bottom: 10px;" max="999">
+
+            <h3>Pago:</h3>
+            <select id="Lista" name="Lista">
+                <option hidden selected>Selecciona una opción</option>
+                <option value="Con tarjeta">Con tarjeta</option>
+                <option value="Bizum">Bizum</option>
+                <option value="Pago por transferencia bancaria">Pago por transferencia bancaria</option>
+                <option value="Sofort Banking">Sofort Banking</option>
+                <option value="Amazon Pay">Amazon Pay</option>
+            </select>
+        </fieldset>
+        <fieldset style="border: solid black 2px;">
+            <legend>Extras</legend>
+            <h3>Qué información desea recibir a su correo:</h3>
+            <input type="checkbox" style="margin-bottom: 10px;">
+            <label for="LlegadaPedido">Llegada próxima de pedido</label><br>
+
+            <input type="checkbox" style="margin-bottom: 10px;">
+            <label for="FacturaPedido">Facutra del pedido</label><br>
+
+            <input type="checkbox" style="margin-bottom: 10px;">
+            <label for="EstadoPeido">Notificación del estado de su pedido</label>
+
+            <h3>Sugerencias:</h3>
+            <textarea name = "Mensaje" placeholder="Mensaje..." style="width: 400px;height: 150px;"></textarea><br>
+
+            <h3>Nivel de satisfaccion:</h3>
+            <input type="range" name="Rango" style="width: 200px;" min="0" max="10" step="2" value="0">
+        </fieldset>
+        <input type="submit" value="Enviar" style="padding: 10px;width: 100px;margin-top: 10px;">
+        <input type="reset" value="Resetear" style="padding: 10px;width: 100px;margin-top: 10px;">
+    </form>
+</body>
+</html>
