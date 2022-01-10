@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.fila {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 4px 4px 4px 4px;
+}
+
+.columna {
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+img {
+  width: 100%;
+  margin-top: 8px;
+}
